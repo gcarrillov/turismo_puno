@@ -7,7 +7,7 @@ body, html {
 
 /* Fondo de la página */
 .background-collage {
-    background-image: url('imagenes/collage.png');
+    background-image: url('imagenes/collagepp.png');
     background-size: cover;
     background-position: center;
     position: fixed;

@@ -33,7 +33,7 @@ body, html {
     display: block;
     padding: 15px 30px;
     margin: 1px;
-    background-color: #5d9df1;
+    background-color: #db5151;
     color: rgb(255, 210, 114);
     text-decoration: none;
     border-radius: 16px;
@@ -69,8 +69,8 @@ body, html {
     display: block;
     padding: 15px 30px;
     margin: 10px;
-    background-color: #6696f0;
-    color: rgb(247, 0, 255);
+    background-color: #93b7e0;
+    color: rgb(202, 211, 126);
     text-decoration: none;
     border-radius: 10px;
     font-size: 1.2em;
@@ -79,7 +79,7 @@ body, html {
 }
 
 .button:hover {
-    background-color: #a371f3;
+    background-color: #93dfd2;
 }
 
 /* Campo de entrada y botón para filtrar */
@@ -91,15 +91,15 @@ body, html {
     padding: 10px;
     font-size: 1em;
     width: 200px;
-    border: 1px solid #8c00ff;
+    border: 1px solid #76c5bb;
     border-radius: 8px;
     margin-right: 10px;
 }
 
 .filter button {
     padding: 10px 20px;
-    background-color: #8981f7;
-    color: rgb(247, 0, 247);
+    background-color: #70abc2;
+    color: rgb(247, 245, 127);
     text-decoration: none;
     border-radius: 8px;
     font-size: 1em;
@@ -107,7 +107,7 @@ body, html {
 }
 
 .filter button:hover {
-    background-color: #a371f3;
+    background-color: #99df9f;
 }
 
 /* Estilos responsivos */
@@ -133,5 +133,95 @@ body, html {
     #buttons-container {
         width: 90%;
         top: 60%;
+    }
+}
+/*pagina sitos_turisticos*/
+
+/* Fondo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e79d80; /* Color de fondo de la página */
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ec4747; /* Color de fondo del encabezado */
+    color: rgb(236, 221, 140);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de la pagina de proyecto */
+
+.project-image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 400px;  /* Tamaño fijo para el ancho */
+    height: 400px; /* Tamaño fijo para la altura */
+    object-fit: cover; /* Ajusta la imagen para que encaje dentro del contenedor */
+    border-radius: 8px;
+}
+
+/* Estilo para la sección turística */
+.tourist-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2c5c5; /* Color de fondo de la sección */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido textual */
+.tourist-content {
+    width: 60%;
+}
+
+/* Imagen de la sección */
+.tourist-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reducción de tamaño de la imagen */
+.tourist-image img {
+    width: 350px;  /* Tamaño fijo para el ancho */
+    height: 240px; /* Tamaño fijo para la altura */
+    object-fit: cover; /* Ajusta la imagen para que encaje dentro del contenedor */
+    border-radius: 8px;
+}
+
+/* Estilo para cambiar colores de secciones al pasar el mouse */
+.tourist-site:hover {
+    background-color: #facf8f9c; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .tourist-site {
+        flex-direction: column;
+    }
+
+    .tourist-content, .tourist-image {
+        width: 100%;
+    }
+
+    .tourist-image img {
+        margin-top: 15px;
+        width: 100px;  /* Ajusta el tamaño en pantallas pequeñas */
+        height: 100px; /* Ajusta el tamaño en pantallas pequeñas */
     }
 }
